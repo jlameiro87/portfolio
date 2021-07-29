@@ -31,7 +31,7 @@ function App() {
       <Router>
         <Header />
         <Container>
-          <Typography component="div" style={{ height: '90vh' }}>
+          <Typography component="div" style={{ height: '90vh', paddingTop: '20px' }}>
             <Switch>
               <Route path="/about">
                 <About />
