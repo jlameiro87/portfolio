@@ -36,8 +36,8 @@ const Header = () => {
             My Portfolio
           </Typography>
 
-          <Link className={classes.menuItem} to="/"><Button className={classes.menuButton} variant="contained" color="secondary">Welcome</Button></Link>
-          <Link className={classes.menuItem} to="/about"><Button className={classes.menuButton} variant="contained" color="secondary">About</Button></Link>
+          <Link className={classes.menuItem} to="/"><Button className={classes.menuButton} variant="contained" color="secondary">About</Button></Link>
+          <Link className={classes.menuItem} to="/welcome"><Button className={classes.menuButton} variant="contained" color="secondary">Welcome</Button></Link>
           <Link className={classes.menuItem} to="/portfolio"><Button className={classes.menuButton} variant="contained" color="secondary">Portfolio</Button></Link>
           <Link className={classes.menuItem} to="/contact"><Button className={classes.menuButton} variant="contained" color="secondary">Contact</Button></Link>
         </Toolbar>

@@ -33,7 +33,7 @@ function App() {
         <Container>
           <Typography component="div" style={{ height: '90vh', paddingTop: '20px' }}>
             <Switch>
-              <Route path="/about">
+              <Route exact path="/">
                 <About />
               </Route>
               <Route path="/portfolio">
@@ -42,7 +42,7 @@ function App() {
               <Route path="/contact">
                 <Contact />
               </Route>
-              <Route path="/">
+              <Route path="/welcome">
                 <Welcome />
               </Route>
             </Switch>
