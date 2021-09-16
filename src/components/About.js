@@ -9,17 +9,9 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import { makeStyles } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Link from '@material-ui/core/Link';
+
+import Experience from './Experience';
+import Certification from './Certification';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,28 +28,6 @@ const useStyles = makeStyles((theme) => ({
 
 const About = () => {
   const classes = useStyles();
-  const certifications = [
-    {
-      id: 1,
-      text: 'B.Sc. Software Engineer.',
-      url: null
-    },
-    {
-      id: 2,
-      text: 'CS50\'s Introduction to Computer Science.',
-      url: 'https://certificates.cs50.io/1918fa46-f205-4600-973c-0f35d12c9521.png?size=letter'
-    },
-    {
-      id: 3,
-      text: 'CS50\'s Web Programming with Python and JavaScript.',
-      url: 'https://certificates.cs50.io/343b8991-fcbe-4ebb-83e5-220d1640668c.png?size=letter'
-    },
-    {
-      id: 4,
-      text: 'FreeCodeCamp\'s JavaScript Algorithms and Data Structures.',
-      url: 'https://www.freecodecamp.org/certification/jlameiro/javascript-algorithms-and-data-structures'
-    }
-  ];
 
   return (
     <div className={classes.divRoot}>
@@ -82,58 +52,8 @@ const About = () => {
             Interested in a challenging technical environment where innovation, teamwork and curiosity is encouraged to create
             great products and services. Perpetual learner.
           </Typography>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Typography variant="h6">Professional Experience</Typography></div>
-          <Timeline align="alternate">
-            <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography color="textSecondary">February 2020 – Present Day</Typography>
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <Typography>Software Developer at Farelogix an Accelya Company</Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography color="textSecondary">November 2015 – December 2019</Typography>
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <Typography>Co-founder & FullStack Developer at PiBLOC</Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent>
-                <Typography color="textSecondary">September 2011 – November 2015</Typography>
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <Typography>Webmaster & FullStack Developer at Universidad de Oriente, Cuba</Typography>
-              </TimelineContent>
-            </TimelineItem>
-          </Timeline>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-            <Typography variant="h6">Certifications</Typography>
-            <List dense={true}>
-              {
-                certifications.map(item =>
-                  <ListItem key={item.id}>
-                    {item.url && <Link href={item.url} target="_blank">{item.text}</Link>}
-                    {!item.url && <ListItemText primary={item.text} />}
-                  </ListItem>
-                )
-              }
-            </List>
-          </div>
+          <Experience />
+          <Certification />
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">

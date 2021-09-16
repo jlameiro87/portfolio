@@ -34,7 +34,7 @@ function App() {
           <Typography component="div" style={{ height: '90vh', paddingTop: '20px' }}>
             <Switch>
               <Route exact path="/">
-                <About />
+                <Welcome />
               </Route>
               <Route path="/portfolio">
                 <Portfolio />
@@ -42,8 +42,8 @@ function App() {
               <Route path="/contact">
                 <Contact />
               </Route>
-              <Route path="/welcome">
-                <Welcome />
+              <Route path="/about">
+                <About />
               </Route>
             </Switch>
           </Typography>
