@@ -23,7 +23,7 @@ const Experience = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Software Developer at Farelogix an Accelya Company</Typography>
+            <Typography>Software Developer at Accelya Group</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -36,6 +36,18 @@ const Experience = () => {
           </TimelineSeparator>
           <TimelineContent>
             <Typography>Co-founder & FullStack Developer at PiBLOC</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Typography color="textSecondary">August 2012 – January 2013</Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Typography>Software Developer at America Techway S.A. Panama. · Freelance</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>

@@ -25,6 +25,11 @@ const Certification = () => {
       id: 4,
       text: 'FreeCodeCamp\'s JavaScript Algorithms and Data Structures.',
       url: 'https://www.freecodecamp.org/certification/jlameiro/javascript-algorithms-and-data-structures'
+    },
+    {
+      id: 5,
+      text: 'FreeCodeCamp\'s Front End Development Libraries.',
+      url: 'https://www.freecodecamp.org/certification/jlameiro/front-end-development-libraries'
     }
   ];
 
