@@ -31,11 +31,16 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      text: 'My Todos',
+      url: 'https://jlameiro-todo.netlify.app/'
+    },
+    {
+      id: 4,
       text: 'Rock - Pappers - Scissors Game',
       url: 'https://pedantic-neumann-171bbe.netlify.app/'
     },
     {
-      id: 4,
+      id: 5,
       text: 'Task Tracker',
       url: 'https://focused-johnson-53f5f6.netlify.app/'
     }
