@@ -43,6 +43,11 @@ const Portfolio = () => {
       id: 5,
       text: 'Task Tracker',
       url: 'https://focused-johnson-53f5f6.netlify.app/'
+    },
+    {
+      id: 6,
+      text: 'Dogs',
+      url: 'https://jlameiro-dogs.netlify.app/'
     }
   ]
 
