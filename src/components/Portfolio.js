@@ -48,6 +48,11 @@ const Portfolio = () => {
       id: 6,
       text: 'Dogs',
       url: 'https://jlameiro-dogs.netlify.app/'
+    },
+    {
+      id: 7,
+      text: 'Notes',
+      url: 'https://jlameiro-react-notes.netlify.app/'
     }
   ]
 
