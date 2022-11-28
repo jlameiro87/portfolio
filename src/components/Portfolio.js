@@ -58,6 +58,11 @@ const Portfolio = () => {
       id: 8,
       text: 'Pokemons',
       url: 'https://jlameiro-react-pokemons.netlify.app/'
+    },
+    {
+      id: 9,
+      text: 'Hangman',
+      url: 'https://jlameiro-react-hangman.netlify.app/'
     }
   ]
 
